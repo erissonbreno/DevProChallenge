@@ -19,7 +19,7 @@ public class Logger {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(logFile, true))) {
             writer.write(logEntry);
         } catch (IOException e) {
-            System.out.println("Error while writing log file " + e.getMessage());;
+            System.out.println("Error while writing log file " + e.getMessage());
         }
     }
 
